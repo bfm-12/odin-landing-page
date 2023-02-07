@@ -14,10 +14,13 @@ ul {
     gap: 16px;
 }
 
+a {
+    text-decoration: none;
+}
 .header {
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 0px 48px;
+    padding: 0px 148px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,13 +31,14 @@ ul {
 }
 
 .hero img {
-    width: 700px;
+    width: 500px;
+    flex-shrink: 0;
 }
 
 .hero {
     background-color: #1f2937;
     color: #f9faf8;
-    padding: 48px;
+    padding: 0px 148px 48px 148px;
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
@@ -45,17 +49,15 @@ ul {
 
 .container {
     display: inline-block;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 16px;
 }
 
-
-/*.header > text {
+.container > ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-}*/
+    flex-wrap: wrap;
+    gap: 48px;
+}
 
 .hero h1 {
     font-size: 48px;
@@ -75,26 +77,53 @@ ul {
     text-decoration: none;
 }
 
-.button {
+.button-b {
     background-color: #3882f6;
-    margin: 48px;
+    margin: 24px;
     padding: 16px;
     border-radius: 10px;
     color:#e5e7eb;
     border: 3px solid #e5e7eb;
-    font-size: 32px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.button:hover {
+.button-b:hover {
     background-color: #e5e7eb;
+    color: #3882f6;
+}
+
+.button-top {
+    background-color: #3882f6;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 10px;
+    color:#e5e7eb;
+    border: 3px solid #3882f6;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-top:hover {
+    background-color: #e5e7eb;
+    border: 3px solid #e5e7eb;
     color: #3882f6;
 }
 
 .content {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content > .container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -102,20 +131,11 @@ ul {
 .content img {
     border-radius: 10px;
     width: 225px;
-    margin: 48px;
 }
 
 .content h2 {
     font-size: 24px;
     color: #1f2937;
-}
-
-.card {
-   /* display: flex;
-    justify-content: center;
-    align-items: center;*/
-    width: 225px;
-    gap: 15px;
 }
 
 .quote-block {
@@ -126,7 +146,6 @@ ul {
     color: #1f2937;
     padding: 48px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 100px;
@@ -158,11 +177,20 @@ ul {
     flex: 1;
 }
 
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cta {
     background-color:#3882f6;
     color:#f9faf8;
     font-size: 20px;
-    padding: 48px;
+    padding: 16px;
+    margin: 48px 200px 48px 200px;
+    border-radius: 10px;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
